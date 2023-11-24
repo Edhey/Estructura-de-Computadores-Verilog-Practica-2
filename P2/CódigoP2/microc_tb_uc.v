@@ -1,3 +1,5 @@
+// Himar Edhey Hernández Alonso y Aarón Jano Barreto
+
 // Testbench para el microc
 `timescale 1 ns / 10 ps 
 module microc_tb;
