@@ -7,7 +7,7 @@ module regfile(output wire [7:0]  RD1, RD2,     //datos leidos
                input  wire [3:0]  RA1, RA2, WA3,//direcciones de regs leidos y reg a escribir
                input  wire [7:0]  WD3);         //dato a escribir
 
-  reg [7:0] RegBank[0:15]; //memoria de 32 registros de 8 bits de ancho
+  reg [7:0] RegBank[0:15]; //memoria de 32 (16??) registros de 8 bits de ancho
 
   initial
   begin
