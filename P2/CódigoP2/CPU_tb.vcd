@@ -1,0 +1,242 @@
+$date
+	Fri Nov 24 01:46:23 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module microc_tb $end
+$var wire 1 ! zero $end
+$var wire 1 " wez $end
+$var wire 1 # we $end
+$var wire 1 $ s_inm $end
+$var wire 1 % s_inc $end
+$var wire 6 & Opcode [5:0] $end
+$var wire 3 ' ALUOp [2:0] $end
+$var reg 1 ( clk $end
+$var reg 1 ) reset $end
+$scope module micro $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var wire 1 * we3 $end
+$var wire 1 ! zero $end
+$var wire 1 + zALU $end
+$var wire 1 " wez $end
+$var wire 1 # we $end
+$var wire 10 , salida_sum [9:0] $end
+$var wire 8 - salida_mux_3 [7:0] $end
+$var wire 4 . salida_mux_2 [3:0] $end
+$var wire 16 / salida_memoria [15:0] $end
+$var wire 1 $ s_inm $end
+$var wire 1 % s_inc $end
+$var wire 10 0 pc_actual [9:0] $end
+$var wire 10 1 nuevo_pc [9:0] $end
+$var wire 8 2 WD3 [7:0] $end
+$var wire 4 3 WA3 [3:0] $end
+$var wire 8 4 RD2 [7:0] $end
+$var wire 8 5 RD1 [7:0] $end
+$var wire 4 6 RA2 [3:0] $end
+$var wire 4 7 RA1 [3:0] $end
+$var wire 6 8 Opcode [5:0] $end
+$var wire 8 9 Inm [7:0] $end
+$var wire 10 : Dir_salto [9:0] $end
+$var wire 3 ; ALUOp [2:0] $end
+$scope module ALU $end
+$var wire 3 < Op [2:0] $end
+$var wire 8 = B [7:0] $end
+$var wire 8 > A [7:0] $end
+$var reg 8 ? S [7:0] $end
+$var reg 1 + zero $end
+$upscope $end
+$scope module PC $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var wire 10 @ D [9:0] $end
+$var reg 10 A Q [9:0] $end
+$upscope $end
+$scope module banco_registros $end
+$var wire 4 B RA1 [3:0] $end
+$var wire 4 C RA2 [3:0] $end
+$var wire 4 D WA3 [3:0] $end
+$var wire 8 E WD3 [7:0] $end
+$var wire 1 ( clk $end
+$var wire 1 * we3 $end
+$var wire 8 F RD2 [7:0] $end
+$var wire 8 G RD1 [7:0] $end
+$upscope $end
+$scope module biestable_d $end
+$var wire 1 + carga $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var wire 1 " d $end
+$var reg 1 ! q $end
+$upscope $end
+$scope module memoria_de_programa $end
+$var wire 10 H Address [9:0] $end
+$var wire 16 I Datum [15:0] $end
+$var wire 1 ( clk $end
+$upscope $end
+$scope module mux_1 $end
+$var wire 10 J D0 [9:0] $end
+$var wire 1 % s $end
+$var wire 10 K Y [9:0] $end
+$var wire 10 L D1 [9:0] $end
+$upscope $end
+$scope module mux_2 $end
+$var wire 4 M D0 [3:0] $end
+$var wire 4 N D1 [3:0] $end
+$var wire 1 $ s $end
+$var wire 4 O Y [3:0] $end
+$upscope $end
+$scope module mux_3 $end
+$var wire 8 P D0 [7:0] $end
+$var wire 8 Q D1 [7:0] $end
+$var wire 1 $ s $end
+$var wire 8 R Y [7:0] $end
+$upscope $end
+$scope module sum_pc $end
+$var wire 10 S A [9:0] $end
+$var wire 10 T B [9:0] $end
+$var wire 10 U Y [9:0] $end
+$upscope $end
+$upscope $end
+$scope module unidad_control $end
+$var wire 6 V Opcode [5:0] $end
+$var wire 1 ( clk $end
+$var wire 1 ) reset $end
+$var wire 1 ! wez_in $end
+$var reg 3 W ALUOp [2:0] $end
+$var reg 1 % s_inc $end
+$var reg 1 $ s_inm $end
+$var reg 1 # we3 $end
+$var reg 1 " wez_out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx W
+b111100 V
+b1 U
+b0 T
+b1 S
+b0xx R
+b11 Q
+b0 P
+b0x O
+b1 N
+b0 M
+b1 L
+b1 K
+b110001 J
+b1111000000110001 I
+b0 H
+b0 G
+b0 F
+bx E
+b1 D
+b11 C
+b0 B
+b0 A
+b1 @
+bx ?
+b0 >
+b0xx =
+bx <
+bx ;
+b110001 :
+b11 9
+b111100 8
+b0 7
+b11 6
+b0 5
+b0 4
+b1 3
+bx 2
+b1 1
+b0 0
+b1111000000110001 /
+b0x .
+b0xx -
+b1 ,
+x+
+z*
+1)
+1(
+bx '
+b111100 &
+1%
+x$
+x#
+x"
+0!
+$end
+#3000
+b0xx0001 1
+b0xx0001 @
+b0xx0001 K
+x#
+x%
+0"
+0)
+0(
+#6000
+bx -
+bx =
+bx R
+bx 4
+bx F
+bx P
+bx 5
+bx >
+bx G
+bx .
+bx O
+bx :
+bx J
+bx 9
+bx Q
+bx 3
+bx D
+bx N
+bx 6
+bx C
+bx 7
+bx B
+bx M
+bx &
+bx 8
+bx V
+bx 1
+bx @
+bx K
+bx /
+bx I
+bx ,
+bx L
+bx U
+b0xx0001 0
+b0xx0001 A
+b0xx0001 H
+b0xx0001 T
+1(
+#9000
+0(
+#12000
+bx 0
+bx A
+bx H
+bx T
+1(
+#15000
+0(
+#18000
+1(
+#21000
+0(
+#24000
+1(
+#27000
+0(

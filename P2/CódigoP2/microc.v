@@ -16,17 +16,17 @@ module microc(output wire [5:0] Opcode, output wire zero, input wire clk, reset,
   // Instrucciones de saltos (absolutos):
   assign Dir_salto = salida_memoria[9:0];
 
-  sum(salida_sum, 10'b1, pc_actual);
+  sum sum_pc(salida_sum, 10'b1, pc_actual);
 
-  mux2 #(10) mux_1(nuevo_pc, Dir_salto, salida_sum);
-  mux2 #(4) mux_2(salida_mux_2, RA1, WA3);
-  mux2 #(8) mux_3(salida_mux_3, RD2, Inm);
+  mux2 #(10) mux_1(nuevo_pc, Dir_salto, salida_sum, s_inc);
+  mux2 #(4) mux_2(salida_mux_2, RA1, WA3, s_inm);
+  mux2 #(8) mux_3(salida_mux_3, RD2, Inm, s_inm);
 
-  alu ALU(zALU, WD3, salida_mux_3, RD1, ALUOp);
+  alu ALU(WD3, zALU, RD1, salida_mux_3, ALUOp);
 
-  ffd biestable_d(clk, reset, zALU, wez, zero); // zALU valor wez Activador
+  ffd biestable_d(clk, reset, wez, zALU, zero); // zALU valor wez Activador
 
-  registro #(10) PC(nuevo_pc, clk, reset, pc_actual);
+  registro #(10) PC(pc_actual, clk, reset, nuevo_pc);
 
   regfile banco_registros(RD1, RD2, clk, we3, RA1, RA2, WA3, WD3);
 
