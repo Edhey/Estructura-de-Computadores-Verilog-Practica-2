@@ -1,3 +1,5 @@
+// Himar Edhey Hernández Alonso y Aarón Jano Barreto
+
 module unidadcontrol #(parameter retardo = 1) (input wire clk, reset, zero,
                                                input wire [5:0] Opcode, 
                                                output reg s_inc, s_inm, we3, wez_out,
