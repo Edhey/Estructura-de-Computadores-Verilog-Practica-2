@@ -1,0 +1,92 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Fri Nov 24 12:26:02 2023
+[*]
+[dumpfile] "/mnt/c/Users/himar/OneDrive - Universidad de La Laguna/Escritorio/Ing-Informatica-ULL/2º Ing Informatica/2º 1er Cuatri/Estructura de Computadores/Practica 2/P2/CódigoP2/CPU_tb.vcd"
+[dumpfile_mtime] "Fri Nov 24 12:17:48 2023"
+[dumpfile_size] 9958
+[savefile] "/mnt/c/Users/himar/OneDrive - Universidad de La Laguna/Escritorio/Ing-Informatica-ULL/2º Ing Informatica/2º 1er Cuatri/Estructura de Computadores/Practica 2/P2/CódigoP2/CPU_tb.gtkw"
+[timestart] 0
+[size] 1908 987
+[pos] -1 -1
+*-17.200190 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] microc_tb.
+[treeopen] microc_tb.micro.
+[sst_width] 214
+[signals_width] 181
+[sst_expanded] 1
+[sst_vpaned_height] 288
+@28
+microc_tb.clk
+microc_tb.reset
+microc_tb.Opcode[5:0]
+@800200
+-PC
+@24
+microc_tb.micro.nuevo_pc[9:0]
+microc_tb.micro.pc_actual[9:0]
+@1000200
+-PC
+@800200
+-Control
+@28
+microc_tb.ALUOp[2:0]
+microc_tb.s_inc
+microc_tb.s_inm
+microc_tb.we
+microc_tb.wez
+@1000200
+-Control
+@800200
+-Registros
+@24
+microc_tb.micro.banco_registros.RA1[3:0]
+microc_tb.micro.banco_registros.RA2[3:0]
+@420
+microc_tb.micro.banco_registros.RD1[7:0]
+microc_tb.micro.banco_registros.RD2[7:0]
+@24
+microc_tb.micro.banco_registros.WA3[3:0]
+@421
+microc_tb.micro.banco_registros.WD3[7:0]
+@1000200
+-Registros
+@28
+microc_tb.zero
+@420
+microc_tb.micro.ALU.A[7:0]
+microc_tb.micro.ALU.B[7:0]
+microc_tb.micro.banco_registros.we3
+@28
+microc_tb.micro.biestable_d.d
+microc_tb.micro.biestable_d.q
+@800200
+-MUX_3
+@24
+microc_tb.micro.mux_3.D0[7:0]
+microc_tb.micro.mux_3.D1[7:0]
+@c00024
+microc_tb.micro.mux_3.Y[7:0]
+@28
+(0)microc_tb.micro.mux_3.Y[7:0]
+(1)microc_tb.micro.mux_3.Y[7:0]
+(2)microc_tb.micro.mux_3.Y[7:0]
+(3)microc_tb.micro.mux_3.Y[7:0]
+(4)microc_tb.micro.mux_3.Y[7:0]
+(5)microc_tb.micro.mux_3.Y[7:0]
+(6)microc_tb.micro.mux_3.Y[7:0]
+(7)microc_tb.micro.mux_3.Y[7:0]
+@1401200
+-group_end
+@1000200
+-MUX_3
+@800200
+-MUX_2
+@24
+microc_tb.micro.mux_2.D0[3:0]
+microc_tb.micro.mux_2.D1[3:0]
+microc_tb.micro.mux_2.Y[3:0]
+@1000200
+-MUX_2
+[pattern_trace] 1
+[pattern_trace] 0

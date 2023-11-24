@@ -24,11 +24,11 @@ module microc(output wire [5:0] Opcode, output wire zero, input wire clk, reset,
 
   alu ALU(WD3, zALU, RD1, salida_mux_3, ALUOp);
 
-  ffd biestable_d(clk, reset, wez, zALU, zero); // zALU valor wez Activador
+  ffd biestable_d(clk, reset, zALU, wez, zero); // Comprobar wez
 
   registro #(10) PC(pc_actual, clk, reset, nuevo_pc);
 
-  regfile banco_registros(RD1, RD2, clk, we3, RA1, RA2, WA3, WD3);
+  regfile banco_registros(RD1, RD2, clk, we, salida_mux_2, RA2, WA3, WD3);
 
   memprog memoria_de_programa(salida_memoria, clk, pc_actual);
 

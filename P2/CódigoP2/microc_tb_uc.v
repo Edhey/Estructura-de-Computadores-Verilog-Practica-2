@@ -21,7 +21,7 @@ end
 microc micro(Opcode, zero, clk, reset, s_inc, s_inm, we, wez, ALUOp);
 
 //instanciacion de la unidad de control
-unidadcontrol unidad_control(clk, reset, zero, Opcode, s_inc, s_inm, we, wez, ALUOp);
+unidadcontrol #(30) unidad_control(clk, reset, zero, Opcode, s_inc, s_inm, we, wez, ALUOp);
 
 // Reseteo y configuracion de salidas del tb
 initial
@@ -29,30 +29,14 @@ begin
   $dumpfile("CPU_tb.vcd");
   $dumpvars;
   reset = 1;
-  #30;
+  #20;
   reset = 0;
 end
 
 // Bucle de pruebas
 initial
 begin
-  #30;
-  $display("Prueba 1: LI");
-  #30;
-  $display("Prueba 2: ADI");
-  #30;
-  $display("Prueba 3: SBI");
-  #30;
-  $display("Prueba 4: ADD");
-  #30;
-  $display("Prueba 5: SUB");
-  #30;
-  $display("Prueba 6: AND");
-  #30;
-  $display("Prueba 7: OR");
-  #30;
-  $display("Prueba 8: XOR");
-  #30;
+  #1100;
   $finish;
 end
 endmodule
